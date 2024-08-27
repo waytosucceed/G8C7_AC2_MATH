@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        background-color: #f0f3f5; /* Light gray */
+        color: #333; /* Dark gray */
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #bbe9ff; /* Light blue */
+        /* padding: 20px; */
+      }
+
+      .header {
+        width: 100%;
+        height: 90px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        padding: 20px;
+        display: flex;
+      }
+
+      .company-logo {
+        height: 100%;
+      }
+
+      .content-container {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 1100px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners */
+
+        img {
+          /* max-width: 100%; */
+          height: 300px;
+          display: block;
+          margin: 1rem auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .lesson-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333; /* Dark gray */
+        margin-bottom: 1rem;
+        text-align: center;
+        text-decoration: underline; /* Underline style */
+      }
+
+      .probing-question {
+        margin-top: 1.5rem;
+        background-color: #f0f8ff; /* Light blue */
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .probing-question div {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #444; /* Dark gray */
+        margin-bottom: 5px;
+      }
+
+      .probing-question p {
+        color: #666; /* Medium gray */
+      }
+
+      h2,
+      h3,
+      h4 {
+        color: #333; /* Dark gray */
+        margin-top: 1.5rem;
+        font-weight: bold; /* Bold font for all headings */
+      }
+
+      .learn-about {
+        background-color: palegreen;
+        border-radius: 1rem;
+        text-align: left;
+        margin: 1rem;
+        padding: 1rem 0;
+        li {
+          list-style-position: inside;
+          padding-left: 1rem;
+        }
+      }
+
+      p,
+      li {
+        color: #555; /* Medium gray */
+        font-size: 1.4rem;
+      }
+
+      ol,
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+      }
+
+      hr {
+        border: none; /* Remove default border */
+        height: 2px; /* Set the height of the horizontal rule */
+        background-color: palevioletred; /* Color of the rule */
+      }
+      @media (max-width: 768px) {
+        .company-logo {
+          height: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="./assests/logo/logo1.png" alt="logo" class="company-logo" />
+        <img src="./assests/logo/logo2.png" alt="logo" class="company-logo" />
+      </div>
+
+      <div class="content-container">
+        <div class="lesson-title">HCF - Highest Common Factor</div>
+
+        <div class="lesson-content">
+          <div>
+           
+            
+         
+            <h2><u>HCF - Highest Common Factor</u></h2>
+            <p>
+              <B>The Highest Common Factor (HCF)</B> of two numbers is the highest possible number that divides both numbers completely. The Highest Common Factor (HCF) is also called the Greatest Common Divisor (GCD).
+            </p>
+            
+            <h2>What is HCF?</h2>
+            <p>
+              The <B>HCF (Highest Common Factor)</B> of two or more numbers is the highest number among all the common factors of the given numbers. In simple words, the HCF (Highest Common Factor) of two natural numbers x and y is the largest possible number that divides both x and y. 
+<BR><BR>Let us understand this <B>HCF definition</B> using two numbers, 18 and 27. 
+<BR><BR>The common factors of 18 and 27 are 1, 3, and 9.
+ <BR><BR>Among these numbers, 9 is the highest (largest) number. So, the HCF of 18 and 27 is 9. This is written as: HCF (18, 27) = 9.
+
+            </p>
+            
+            
+            <h2>How to Find HCF?</h2>
+            <p>
+              There are many ways to find the highest common factor of the given numbers. Irrespective of the method, the answer to the HCF of the numbers is always the same. There are 3 methods to calculate the HCF of two numbers:
+            <ul>
+              <li>HCF by listing factors method</li>
+              <li>HCF by prime factorisation</li>
+              <li>HCF by division method</li>
+            </ul>
+            </p>
+            
+            <h2>HCF by Listing Factors Method</h2>
+
+            <p>
+              In this method, we list the factors of each number and find the common factors of those numbers. Then, among the common factors, we determine the highest common factor. Let us understand this method using an example.
+<BR><BR><B>Example</B>: Find the HCF of 30 and 42.
+<BR><B>Solution</B>: We will list the factors of 30 and 42. The factors of 30 are 1, 2, 3, 5, 6, 10, 15, and 30 and the factors of 42 are 1, 2, 3, 6, 7, 14, 21, and 42. Clearly, 1, 2, 3, and 6 are the common factors of 30 and 42. But 6 is the greatest of all the common factors. Hence, the HCF of 30 and 42 is 6.
+            </p>
+            
+            <h2>HCF by Prime Factorization</h2>
+            
+            <p>
+              To find the HCF of numbers by the prime factorization method, we use the following steps. Let us understand this method using the example given below.
+              <UL>
+                <LI><B>Step 1</B>: Find the common prime factors of the given numbers.</LI>
+                <LI><B>Step 2</B>: Then, multiply the common prime factors that have the least or smallest power to obtain the HCF of those numbers.</LI>
+              </UL>
+              <p><B>Example</B>: Find the HCF of 60 and 90.
+                <BR><BR>
+  <B>Solution</B>:
+  <BR>The prime factors of 60 = 2 × 2 × 3 × 5 or 22 × 3 × 5
+    <BR>The prime factors of 90 = 2 × 3 × 3 × 5 or 2 × 32 × 5.
+      <BR>Now, the HCF of 60 and 90 will be the product of the common prime factors that have the least powers, which are, 2, 3, and 5. So, HCF of 60 and 90 = 2 × 3 × 5 = 30
+  
+              </p></p>
+            <h2>HCF by Division Method</h2>
+            <p>
+              The HCF of two numbers can be calculated using the division method. Let us understand this using the following steps and the example given below.
+              <ul>
+                <li>We divide the larger number by the smaller number and check the remainder.</li>
+                <li>Then, we make the remainder of the previous step as the new divisor; and the divisor of the previous step becomes the new dividend. After this, we perform the long division again.</li>
+                <li>We continue the long division process till we get the remainder as 0. It should be noted that the last divisor will be the HCF of those two numbers.</li>
+      
+              </ul>
+              <p><b>Example</b>:Find the HCF of 198 and 360 using the division method.
+                <BR><B>Solution</B>: Let us find the HCF of the given numbers using the following steps.
+                 <UL>
+                   <LI>Among the two given numbers, 360 is the larger number, and 198 is the smaller number.</LI>
+                   <LI>We divide 360 by 198 and check the remainder. Here, the remainder is 162. Make the remainder 162 as the new divisor and the previous divisor 198 as the new dividend and perform the long division again.</LI>
+                   <LI>We will continue this process till we get the remainder as 0. Here, the last divisor is 18 which is the HCF of 198 and 360. Therefore, the HCF of 198 and 360 is 18.</LI>
+                 </UL></p>
+            </p>
+            <img src="./assests/images/1.png" alt="">
+            <h2>HCF of Multiple Numbers</h2>
+            <p>
+              The method to find the HCF of multiple numbers is the same when we use the 'listing factors method' and 'the prime factorization method'. However, while using the division method, there is a slight change in the case of multiple numbers. Let us learn how to find the HCF of three numbers using the division method.
+
+            </p>
+            <H2>HCF of Three Numbers</H2>
+            <p>
+              To find the HCF of three numbers, we use the following procedure. Let us understand this using the steps and the example given below.
+              <ul>
+                <li>First, find the HCF of the largest and the smallest of the given numbers.</li>
+                <li>Then, find the HCF of the third number and the HCF obtained from the first two numbers in the previous step.</li>
+                <li>This gives the HCF of the three numbers.</li>
+              </ul>
+              <p><b>Example</b>: Find the HCF of 126, 162, and 180.
+                <br><b>Solution</b>: First, we will find the HCF of the two numbers 126 and 180. The HCF of 126 and 180 = 18. 
+                <br><br>Then, we will find the HCF of the third number, which is 162, and the HCF of the two numbers obtained in the previous step, that is, 18. 
+                <br>This will give the final HCF of all three numbers.
+                </p>
+            </p>
+            <img src="./assests/images/2.png" alt="" style="width: 40%;">
+            <h2>HCF of Four Numbers</h2>
+            <p>
+              To find the HCF of four numbers, we use the following steps.
+              <ul>
+                <li>First, we will find the HCF of the two pairs of numbers separately.</li>
+                <li>Then, we will find the HCF of the HCFs that were calculated in the previous step.</li>
+              </ul>
+            </p>
+            <h2>HCF of Prime Numbers</h2>
+            <p>
+              We know that a prime number has only two factors, 1 and the number itself. Let us consider two prime numbers 2 and 7, and find their HCF by listing their factors. The factors of 2 = 1, 2; and the factors of 7 = 1, 7. We can see that the only common factor of 2 and 7 is 1. Hence, the HCF of prime numbers is always equal to 1
+            </p>
+            <h2>Properties of HCF</h2>
+            <p>
+              We already know that the HCF of a and b is the highest common factor of the numbers a and b. Let us have a look at the important properties of HCF:
+              <ul>
+                <li>The HCF of two or more numbers divides each of the numbers without a remainder.</li>
+                <li>The HCF of two or more numbers is a factor of each of the numbers.</li>
+                <li>The HCF of two or more numbers is always less than or equal to each of the numbers.</li>
+                <li>The HCF of two or more prime numbers is always 1.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
